@@ -1,9 +1,10 @@
 import axios from "axios";
+import {baseUrl} from "../../apikeys.json";
 
 const getPickles = () => new Promise((resolve, reject) => {
-  axios.get("https://localhost:44310/api/pickles")
-  .then((result) => resolve(result.data))
-  .catch(error => reject(error));
-  });
+  axios.get(`${baseUrl}/api/pickles`)
+    .then((result) => resolve(result.data))
+    .catch(error => reject(error));
+ });
 
 export {getPickles};
