@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import SinglePickle from "../../shared/SinglePickle";
+import SinglePickle from "../../shared/SinglePickle/SinglePickle";
 import {getPickles} from "../../../helpers/data/pickleData";
 
 class Pickles extends Component {
